@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body class="background">
+    <div class="borders">
+        <h2 style="color: rgb(250, 0, 0);">DETAILS</h2>
+        <form action="thank.html" id="color">
+            <label for="fullname">FULLNAME</label>
+            <input type="text" name="fullname" id="fullname" placeholder="FULLNAME" required>
+            
+            <label for="address">ADDRESS</label>
+            <input type="text" name="address" id="address" placeholder="ADDRESS" required>
+            
+            <label for="birthday">BIRTHDAY</label>
+            <input type="date" name="birthday" id="birthday" required>
+            
+            <fieldset>
+                <legend>GENDER</legend>
+                <input type="radio" name="gender" id="male" value="male" required>
+                <label for="male">MALE</label>
+               
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">FEMALE</label>
+                
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">OTHER</label>
+            </fieldset>
+            
+            <label for="country">COUNTRY</label>
+            <select name="country" id="country">
+                <option value="india">INDIA</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="japan">JAPAN</option>
+            </select>
+            
+            <div>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset" name="reset" id="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

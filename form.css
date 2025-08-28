@@ -1,0 +1,190 @@
+/*-------both form or full_form-------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#submit{
+    background-color: rgb(128, 194, 14);
+    border-radius: 10px;
+    color: aliceblue;
+    padding: 10px;
+}
+.background{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+} 
+
+/*------form css-------*/
+.border{
+    border:2px solid black;
+    padding: 2em;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+ @media (max-width: 768px) {
+    .border {
+        padding: 1.5em;
+    }
+}
+        
+@media (max-width: 480px) {
+    .border {
+        padding: 1em;
+    }
+            
+    input[type="email"],
+    input[type="password"] {
+        width: 90%;
+    }
+}
+/*------full form css-------*/
+.borders {
+            border: 2px solid black;
+            padding: 2em;
+            text-align: center;
+            background-color: aliceblue;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+fieldset {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 200px;
+        }
+ #reset {
+            background-color: red;
+            color: aliceblue;
+            border-radius: 10px;
+            margin-left: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        form label, form select, fieldset {
+            margin-bottom: 15px;
+            width: 80%;
+            max-width: 300px;
+        }
+        
+        input, select {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+        }
+        
+        /* Media Queries for responsiveness */
+        @media (max-width: 600px) {
+            .borders {
+                padding: 1.5em;
+            }
+            
+            form label, form input, form select, fieldset {
+                width: 95%;
+            }
+            
+            fieldset {
+                max-width: 180px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .borders {
+                padding: 1em;
+            }
+            
+            #submit, #reset {
+                width: 45%;
+                margin: 5px 0;
+            }
+            
+            fieldset {
+                max-width: 160px;
+            }
+        }
+/*-------thank-------*/
+.thank {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border: 3px solid green;
+            background-color: red;
+            font-size: 4rem;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            
+            animation-name: in_out;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+@keyframes in_out{
+    0%{transform:scale(2);} 
+    100%{transform:scale(3);}
+}
+
+.background_thank{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #ff00d4, #00ddff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes in_out {
+    0% { transform: scale(1.2); } 
+    100% { transform: scale(1.5); }
+}
+        
+i {
+    color: azure;
+}
+        
+@media (max-width: 768px) {
+    .thank {
+        font-size: 3rem;
+        padding: 0.8rem 1.6rem;
+    }
+            
+@keyframes in_out {
+    0% { transform: scale(1.1); } 
+    100% { transform: scale(1.3); }
+    }
+}
+        
+@media (max-width: 480px) {
+    .thank {
+        font-size: 2.2rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0 10px;
+    }
+            
+@keyframes in_out {
+    0% { transform: scale(1.05); } 
+    100% { transform: scale(1.15); }
+    }
+}
